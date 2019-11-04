@@ -1,0 +1,8 @@
+<h4>User List</h4>
+<div *ngFor="let user of userList">
+  <hr>
+  <div> {{user.nickname}}</div>
+  <img [src]="user.avatar" height="55" width="55">
+  <div> {{user.status}}</div>
+</div>
+

@@ -1,0 +1,6 @@
+<form class="form-group form-row">
+  <input type="text" #messageText
+         class="form-control col-sm-10" name="new-message" placeholder="Type your message">
+  <button class="btn btn-primary" type="submit"
+          (click)="onSubmit(messageText.value); messageText.value='';">Send Message</button>
+</form>
